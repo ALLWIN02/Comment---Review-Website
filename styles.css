@@ -1,0 +1,396 @@
+body {
+  padding-top: 5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #f8f9fa; /* Light background */
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+}
+h1 {
+  color: #365aa0;
+  font-family: "Segoe UI", sans-serif;
+}
+p {
+  color: #555;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #004b99;
+  text-decoration: underline;
+}
+
+.review-container {
+  margin-top: 2rem;
+}
+.navbar {
+  background-color: #0066cc;
+}
+.navbar.custom-navbar {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.navbar .mx-auto {
+  text-align: center;
+}
+
+.navbar .mx-auto form {
+  display: inline-block;
+}
+/* Navbar Styles */
+.navbar.custom-navbar {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: royalblue; /* Semi-transparent background */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: background-color 0.3s ease;
+}
+
+.navbar.custom-navbar:hover {
+  background-color: #365aa0; /* Darken on hover */
+}
+
+.navbar .navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white; /* White text for brand */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: white;
+  font-size: 1.1rem;
+  margin-right: 1rem;
+  transition: color 0.3s ease;
+}
+.nav-link i {
+  color: royalblue; /* Change the icon color to royal blue */
+}
+.nav-link i:hover {
+  color: silver; /* Change the icon color to royal blue */
+}
+.navbar .navbar-nav .nav-link:hover {
+  color: silver; /* White text on hover */
+}
+
+.navbar .navbar-toggler {
+  border: none;
+}
+
+.navbar .navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="%23fff" viewBox="0 0 30 30"%3E%3Cpath stroke="rgba(255, 255, 255, 0.7)" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+}
+
+.navbar .form-inline .form-control {
+  border-radius: 5px;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid silver;
+  background-color: #f0f0f0;
+}
+
+.navbar .form-inline .btn {
+  border-radius: 5px;
+  padding: 0.5rem 1.5rem;
+  background-color: royalblue;
+  color: white;
+  border: none;
+}
+
+.navbar .form-inline .btn:hover {
+  background-color: #365aa0;
+}
+
+/* Hero Section Styles */
+.hero-section {
+  position: relative;
+  height: 70vh;
+  background-color: royalblue;
+  background-image: url("img/one.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-section h1,
+.hero-section p {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section .btn-primary {
+  margin-top: 20px;
+  background-color: royalblue;
+  border-color: royalblue;
+}
+
+.hero-section .btn-primary:hover {
+  background-color: #365aa0;
+  border-color: #365aa0;
+}
+
+/* Category Card Styles */
+.category-box {
+  position: relative;
+  border: 1px solid silver;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  height: 180px;
+}
+
+.category-box img {
+  max-width: 400px;
+  max-height: 200px;
+  transition: transform 0.3s ease;
+  object-fit: cover; /* Ensures the image maintains its aspect ratio while covering the entire box */
+}
+
+.category-box:hover {
+  transform: translateY(-10px); /* Lift the card on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.category-box:hover img {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.category-box h5 {
+  margin-top: 15px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: royalblue;
+  transition: color 0.3s ease;
+}
+
+.category-box:hover h5 {
+  color: #365aa0; /* Change text color on hover */
+}
+
+.category-box a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.category-box .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.category-box:hover .overlay {
+  opacity: 1;
+}
+
+.category-box .overlay h5 {
+  color: #fff;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.category-box .overlay .btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: royalblue;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.category-box .overlay .btn:hover {
+  background-color: #365aa0;
+}
+
+.jumbotron {
+  padding: 2rem 1rem;
+}
+.jumbotron h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.container-fluid {
+  background-color: white !important;
+}
+
+.jumbotron {
+  background-color: white !important;
+}
+.list-group-item img {
+  max-width: 150px;
+  margin-right: 15px;
+}
+.list-group-item {
+  background-color: white;
+  border: 1px solid silver;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.list-group-item h5 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.list-group-item small {
+  color: royalblue;
+}
+.business-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.business-img {
+  width: 120px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.business-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.business-item p {
+  margin: 5px 0;
+}
+
+.star-rating {
+  color: #ffc107; /* Star color */
+}
+.how-it-works-section {
+  background-color: #f9f9f9;
+  padding: 3rem 0;
+}
+
+.how-it-works-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.icon-box {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icon-box i {
+  color: royalblue;
+  margin-bottom: 1rem;
+}
+.icon-box h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.icon-box p {
+  color: #666;
+  font-size: 1rem;
+}
+
+.icon-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.footer {
+  padding: 2rem 0;
+  background-color: royalblue; /* Dark background */
+  color: white; /* White text */
+}
+
+.footer h5 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.footer a {
+  text-decoration: none;
+  color: silver;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: white; /* Green color on hover */
+}
+
+.footer .social-icons a {
+  font-size: 1.5rem;
+  margin-right: 15px;
+  transition: transform 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.footer .list-unstyled {
+  padding-left: 0;
+}
+
+.footer .list-unstyled li {
+  margin-bottom: 10px;
+}
+
+.footer ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer ul li i {
+  margin-right: 10px;
+}
+
+footer p {
+  color: white;
+}

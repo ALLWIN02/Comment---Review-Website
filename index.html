@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Review Website</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-md navbar-dark bg-dark fixed-top custom-navbar"
+    >
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logo.png" alt="Comment Logo" style="height: 40px; width: auto; margin-right: 10px;">comment
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarMenu"
+        aria-controls="navbarMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <div class="mx-auto order-0">
+          <form class="form-inline my-2 my-lg-0" action="search_results.php" method="GET">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              name="query"
+              placeholder="Search"
+              aria-label="Search"
+              required
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="user_register.php">  Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="user_login.php"> Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="admin_login.php"> Admin</a>
+          </li>
+          <li class="nav-item"></li>
+            <a class="nav-link" href="profile.php">User</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main" class="container-fluid mt-5 pt-3">
+      <section class="hero-section text-white text-center">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <h1 class="display-4">Discover the Best Places and Products!</h1>
+          <p class="lead">
+            Read reviews, share your experiences, and find what's right for you.
+          </p>
+          <a href="#businessList" class="btn btn-primary btn-lg">Explore Now</a>
+        </div>
+      </section>
+
+      <!-- How It Works Section -->
+      <section class="how-it-works-section text-center py-5">
+        <div class="container">
+          <h2 class="mb-4">How It Works</h2>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="icon-box">
+                <i class="fas fa-search fa-3x mb-3"></i>
+                <h4>Find Businesses</h4>
+                <p>Search through our extensive listings to discover the best businesses near you.</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="icon-box">
+                <i class="fas fa-star fa-3x mb-3"></i>
+                <h4>Read Reviews</h4>
+                <p>Read honest reviews from real users to help you make informed decisions.</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="icon-box">
+                <i class="fas fa-pencil-alt fa-3x mb-3"></i>
+                <h4>Share Your Experience</h4>
+                <p>Write your own reviews and help others by sharing your experiences.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="jumbotron text-center py-5">
+        <h1>Categories</h1>
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="category-box">
+              <a href="category_restaurants.html">
+                <img src="img/res.jpg" alt="Restaurants" class="img-fluid" />
+                <div class="overlay">
+                  <h5>Restaurants</h5>
+                  <button class="btn btn-primary">Explore</button>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="category-box">
+              <a href="category_Fashion.html">
+                <img
+                  src="img/Fashion.jpg"
+                  alt="Fashion"
+                  class="img-fluid"
+                />
+                <div class="overlay">
+                  <h5>Fashion</h5>
+                  <button class="btn btn-primary">Explore</button>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="category-box">
+              <a href="category_electronic_products.html">
+                <img
+                  src="img/tech.jpg"
+                  alt="Electronic Products"
+                  class="img-fluid"
+                />
+                <div class="overlay">
+                  <h5>Electronics</h5>
+                  <button class="btn btn-primary">Explore</button>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="category-box">
+              <a href="category_home_kitchen.html">
+                <img
+                  src="img/home.jpg"
+                  alt="Home & Kitchen"
+                  class="img-fluid"
+                />
+                <div class="overlay">
+                  <h5>Home & Kitchen</h5>
+                  <button class="btn btn-primary">Explore</button>
+                </div>
+              </a>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="category-box">
+              <a href="category_food_snacks.html">
+                <img src="img/groc1.jpg" alt="Food & Snacks" class="img-fluid" />
+                <div class="overlay">
+                  <h5>Food & Snacks</h5>
+                  <button class="btn btn-primary">Explore</button>
+                </div>
+              </a>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="category-box">
+              <a href="category_automotive.html">
+                <img src="img/auto.jpg" alt="Automotive" class="img-fluid" />
+                <div class="overlay">
+                  <h5>Automotive</h5>
+                  <button class="btn btn-primary">Explore</button>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="category-box">
+              <a href="category_Local_Business.html">
+                <img src="img/bus.jpg" alt="Local Business" class="img-fluid" />
+                <div class="overlay">
+                  <h5>Local Businesses</h5>
+                  <button class="btn btn-primary">Explore</button>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="category-box">
+              <a href="category_movies_series.html">
+                <img
+                  src="img/movie.jpg"
+                  alt="Movies & Series"
+                  class="img-fluid"
+                />
+                <div class="overlay">
+                  <h5>Movies & Series</h5>
+                  <button class="btn btn-primary">Explore</button>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="container-fluid">
+        
+        <div class="jumbotron text-center py-5">
+          <h1>Top Rated Businesses</h1>
+          <div id="topRatedBusinesses" class="list-group">
+            <!-- Top-rated businesses will be loaded here dynamically -->
+          </div>
+        </div>
+        
+        <div class="jumbotron text-center py-5">
+          <h1>Most Reviewed Businesses</h1>
+          <div id="mostReviewedBusinesses" class="list-group">
+            <!-- Most-reviewed businesses will be loaded here dynamically -->
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="container-fluid ">
+        <div class="jumbotron text-center py-5">
+          <h1>Resent Business</h1>
+          <div id="businessList" class="list-group">
+            <!-- Business listings will be loaded here dynamically -->
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="scripts.js"></script>
+  
+    <footer class="footer bg-dark text-white">
+      <div class="container">
+        
+
+
+
+        <div class="row">
+          <!-- Links Section -->
+          <div class="col-lg-2 col-md-6 mb-4">
+            <h5>Useful Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="user_register.php" class="text-white">Register</a></li>
+              <li><a href="user_login.php" class="text-white">Login</a></li>
+              <li><a href="admin_login.php" class="text-white">Admin</a></li>
+              <li><a href="contact.php" class="text-white">Contact Us</a></li>
+            </ul>
+          </div>
+          <!-- Contact Section -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5>Contact Us</h5>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-map-marker-alt"></i> 123 Main Street, City</li>
+              <li><i class="fas fa-phone-alt"></i> +123 456 7890</li>
+              <li><i class="fas fa-envelope"></i> info@comment.com</li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5>Add your businesses</h5>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-phone-alt"></i> +123 456 7891</li>
+              <li><i class="fas fa-envelope"></i> addme@comment.com</li>
+            </ul>
+          </div>
+          <!-- Social Media Section -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5>Follow Us</h5>
+            <div class="social-icons">
+              <a href="#" class="text-white mr-3"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="text-white mr-3"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="text-white mr-3"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="text-white mr-3"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+               <!-- About Section -->
+        <div class="col" style="text-align: center;">
+          <h5>About <img src="img/logo.png" alt="Comment Logo" style="height: 40px; width: auto; margin-right: 10px;">Comment</h5>
+          <p>
+            Comment is your go-to review platform for discovering and sharing experiences about the best businesses, products, and services.
+          </p>
+          <p >&copy; 2024 Comment. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    
+  </body>
+</html>
+
+
+
