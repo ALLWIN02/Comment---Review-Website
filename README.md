@@ -114,7 +114,7 @@ Follow these steps to set up the project locally:
 
 ### Homepage  
 ![Homepage Screenshot](https://github.com/ALLWIN02/Comment---Review-Website/blob/main/uploads1/h1.jpg?raw=true?text=Homepage)
-
+![Homepage Screenshot](https://github.com/ALLWIN02/Comment---Review-Website/blob/main/uploads1/h1.jpg?raw=true?text=Homepage)
 ### Business Listing  
 ![Business Listing Screenshot](https://via.placeholder.com/800x400.png?text=Business+Listing)
 
