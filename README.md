@@ -119,7 +119,7 @@ Follow these steps to set up the project locally:
 ![Business Listing Screenshot](https://via.placeholder.com/800x400.png?text=Business+Listing)
 
 ### Admin Dashboard  
-![Admin Dashboard Screenshot](https://via.placeholder.com/800x400.png?text=Admin+Dashboard)
+![Admin Dashboard Screenshot](https://github.com/ALLWIN02/Comment---Review-Website/blob/main/uploads1/admindashboard.jpg?raw=true?text=Admin+Dashboard)
 
 ---
 
