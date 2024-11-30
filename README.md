@@ -22,16 +22,22 @@
 
 - **User Management**:  
   Secure login and registration system with session management.  
+
 - **Business Listings**:  
   Add, view, and manage businesses categorized for easy access.  
+
 - **Review and Rating System**:  
   Post detailed reviews, give star ratings, and view reviews by others.  
+
 - **Search Functionality**:  
   Advanced search with autocomplete, filtering by categories, ratings, or names.  
+
 - **Top Rated and Most Reviewed Sections**:  
   Discover the best-rated businesses and most popular listings.  
+
 - **Admin Dashboard**:  
   Manage businesses, reviews, and categories with intuitive admin controls.  
+
 - **Responsive Design**:  
   Optimized for mobile, tablet, and desktop.  
 
@@ -41,28 +47,24 @@
 
 ### **Frontend**
 - **HTML5**: Structured layout.  
-- **CSS3 & Bootstrap**: Responsive and styled UI.  
+- **CSS3**: Styled and responsive UI.  
 - **JavaScript**: Dynamic functionality.  
 
 ### **Backend**
 - **PHP**: Server-side scripting and logic.  
 - **MySQL**: Database for storing users, businesses, reviews, and ratings.  
 
-### **Additional Tools**
-- **Cloudinary** (optional): Media management for business images.  
-- **Stripe** (optional): Payment processing for premium features.  
-
 ---
 
 ## **Database Design**
 
 The database consists of four key tables:
-1. **Users Table**: Manages user information and authentication.
-2. **Businesses Table**: Stores details about businesses listed on the platform.
-3. **Reviews Table**: Tracks user reviews for businesses.
-4. **Ratings Table**: Stores star ratings provided by users.
+1. **Users Table**: Stores user credentials, names, and roles.  
+2. **Businesses Table**: Contains details about businesses listed on the platform.  
+3. **Reviews Table**: Stores user reviews for businesses.  
+4. **Ratings Table**: Tracks star ratings provided by users for businesses.  
 
-Refer to the `/docs/database_schema.sql` file for the schema.
+Refer to the `/sql/review_website_db.sql` file for the full schema.
 
 ---
 
@@ -77,8 +79,8 @@ Follow these steps to set up the project locally:
    ```
 
 2. **Set Up the Database**:
-   - Import the provided `review_website_db.sql` file into your MySQL server.  
-   - Update the database credentials in the `config.php` file.
+   - Import the `sql/review_website_db.sql` file into your MySQL server.  
+   - Update the database connection details in the `includes/config.php` file.
 
 3. **Configure the Project**:
    - Update the `config.php` file with your database connection settings.
@@ -96,13 +98,15 @@ Follow these steps to set up the project locally:
 ## **Usage**
 
 ### For Users:
-- Register and log in to your account.  
-- Search for businesses, add reviews, and rate them.  
-- Explore top-rated and most-reviewed businesses.  
+- **Register and Login**: Create an account or log in with existing credentials.  
+- **Search Businesses**: Use the search bar with autocomplete and filters.  
+- **Post Reviews**: Share feedback on businesses with a star rating and review.  
+- **Explore**: Browse businesses by categories or find top-rated and most-reviewed listings.  
 
 ### For Admins:
-- Log in using admin credentials.  
-- Add or update business details, reviews, and categories via the dashboard.  
+- **Dashboard**: Access the admin panel to manage users, businesses, and reviews.  
+- **Add/Edit Businesses**: Keep the business database up to date.  
+- **Moderate Reviews**: Approve or remove inappropriate reviews.  
 
 ---
 
@@ -117,17 +121,21 @@ Follow these steps to set up the project locally:
 ### Admin Dashboard  
 ![Admin Dashboard Screenshot](https://via.placeholder.com/800x400.png?text=Admin+Dashboard)
 
-
 ---
 
 ## **Future Enhancements**
- 
+
 - **Analytics Dashboard**:  
-  Provide insights for business performance.  
-- **Voice Search**:  
-  Enhance accessibility for users.  
+  Provide insights on business performance, review trends, and user engagement.  
+
 - **Business Ownership Management**:  
-  Allow businesses to claim ownership of their listings.  
+  Enable businesses to claim and manage their listings.  
+
+- **Voice Search**:  
+  Add voice-based search functionality for better accessibility.  
+
+- **Premium Features**:  
+  Introduce paid plans for businesses to promote their listings.  
 
 ---
 
@@ -135,11 +143,21 @@ Follow these steps to set up the project locally:
 
 Contributions are welcome!  
 To contribute:  
+
 1. Fork the repository.  
-2. Create a feature branch (`git checkout -b feature-name`).  
-3. Commit your changes (`git commit -m 'Add new feature'`).  
-4. Push to the branch (`git push origin feature-name`).  
-5. Open a pull request.  
+2. Create a new branch for your feature:  
+   ```bash
+   git checkout -b feature-name
+   ```  
+3. Make your changes and commit them:  
+   ```bash
+   git commit -m "Add feature description"
+   ```  
+4. Push to the branch:  
+   ```bash
+   git push origin feature-name
+   ```  
+5. Open a pull request on GitHub.
 
 ---
 
@@ -149,4 +167,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-Feel free to customize the placeholders and adjust the content as per your project needs.
+Let me know if you need additional sections or further modifications!
